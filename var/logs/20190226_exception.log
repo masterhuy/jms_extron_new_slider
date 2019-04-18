@@ -1,0 +1,1 @@
+*ERROR* 	v1.7.5.0	2019/02/26 - 01:55:28: Dispatcher::createUrl() miss required parameter "category_slug" for route "jmsblog-post" at line 915 in file classes/Dispatcher.php
