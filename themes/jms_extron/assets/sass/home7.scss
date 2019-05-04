@@ -219,6 +219,9 @@
 
 //slider
 .jms-slider-wrapper{
+	.fs-pager-wrapper span{
+		background: transparent !important;
+	}
 	.old-price{
 		font-weight: 700;
 		color: #888;

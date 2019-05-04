@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-18 05:37:36
+/* Smarty version 3.1.33, created on 2019-05-04 06:23:57
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsslider\views\templates\hook\layerconfig.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cb84560c99988_78958470',
+  'unifunc' => 'content_5ccd683d8ed572_99227160',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a6047480757c5d782d7f1555dd01903a32b4617e' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsslider\\views\\templates\\hook\\layerconfig.tpl',
-      1 => 1544086040,
+      1 => 1556096412,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cb84560c99988_78958470 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ccd683d8ed572_99227160 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="form_layer_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
 " class="form-layer panel-bodyclearfix" style="display:none">
     <input type="hidden" name="layer_ids[]" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
@@ -198,7 +198,7 @@ _off">No</label>
                                 <div class="input-group">
                                     <input type="text" id="data_width_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
 " class="data-width" name="data_width_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
-" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->data_width;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->desktop->data_width;?>
 "
                                     title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width ">
                                     <span class="input-group-addon">pixel</span>
@@ -211,7 +211,7 @@ _off">No</label>
                                 <div class="input-group">
                                     <input type="text" id="data_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
 " class="data-height" name="data_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
-" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->data_height;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->desktop->data_height;?>
 " title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height">
                                     <span class="input-group-addon">pixel</span>
                                 </div>
@@ -532,6 +532,14 @@ _off">No</label>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->mobile->data_x;?>
 " title="Typing 'center' to center">
                                     <span class="input-group-addon">pixel</span>
+                                    <input type="hidden" id="data_width_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" class="data-width" name="data_mwidth_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->mobile->data_width;?>
+">
+                                    <input type="hidden" id="data_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" class="data-height" name="data_mheight_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->mobile->data_height;?>
+">
                                 </div>
                             </div>
                         </div>
@@ -612,6 +620,14 @@ _off">No</label>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->mobile2->data_x;?>
 " title="Typing 'center' to center">
                                     <span class="input-group-addon">pixel</span>
+                                    <input type="hidden" id="data_width_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" class="data-width" name="data_m2width_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->mobile2->data_width;?>
+">
+                                    <input type="hidden" id="data_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" class="data-height" name="data_m2height_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->mobile2->data_height;?>
+">
                                 </div>
                             </div>
                         </div>
@@ -691,6 +707,14 @@ _off">No</label>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->tablet->data_x;?>
 " title="Typing 'center' to center">
                                     <span class="input-group-addon">pixel</span>
+                                    <input type="hidden" id="data_width_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" class="data-width" name="data_twidth_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->tablet->data_width;?>
+">
+                                    <input type="hidden" id="data_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" class="data-height" name="data_theight_<?php echo $_smarty_tpl->tpl_vars['layer']->value->id;?>
+" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value->tablet->data_height;?>
+">
                                 </div>
                             </div>
                         </div>

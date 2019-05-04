@@ -21,6 +21,8 @@ class Style extends ObjectModel
     public $data_x = 0;
     public $data_y = 0;
     public $data_show = 1;
+    public $data_width = 0;
+    public $data_height = 0;
     public static $definition = array(
         'table' => 'jms_layer_style',
         'primary' => 'id_style',
@@ -34,6 +36,8 @@ class Style extends ObjectModel
             'data_x' => array('type' => self::TYPE_INT),
             'data_y' => array('type' => self::TYPE_INT),
             'data_show' => array('type' => self::TYPE_BOOL, 'validate' => 'isBool'),
+            'data_width' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
+            'data_height' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
         )
     );
     public static function newType($type)

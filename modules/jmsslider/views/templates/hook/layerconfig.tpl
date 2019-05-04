@@ -120,7 +120,7 @@
                             <span data-original-title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width" class="label-tooltip" data-toggle="tooltip" data-html="true" ><i class="material-icons">settings_ethernet</i></span>
                             <div class="col-lg-8">
                                 <div class="input-group">
-                                    <input type="text" id="data_width_{$layer->id nofilter}" class="data-width" name="data_width_{$layer->id nofilter}" value="{$layer->data_width nofilter}"
+                                    <input type="text" id="data_width_{$layer->id nofilter}" class="data-width" name="data_width_{$layer->id nofilter}" value="{$layer->desktop->data_width nofilter}"
                                     title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width ">
                                     <span class="input-group-addon">pixel</span>
                                 </div>
@@ -130,7 +130,7 @@
                             <span data-original-title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height" class="label-tooltip" data-toggle="tooltip" data-html="true" ><i class="material-icons rotate90">settings_ethernet</i></span>
                             <div class="col-lg-8">
                                 <div class="input-group">
-                                    <input type="text" id="data_height_{$layer->id nofilter}" class="data-height" name="data_height_{$layer->id nofilter}" value="{$layer->data_height nofilter}" title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height">
+                                    <input type="text" id="data_height_{$layer->id nofilter}" class="data-height" name="data_height_{$layer->id nofilter}" value="{$layer->desktop->data_height nofilter}" title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height">
                                     <span class="input-group-addon">pixel</span>
                                 </div>
                             </div>
@@ -337,6 +337,8 @@
                                 <div class="input-group">
                                     <input type="text" class="data-x" name="data_mx_{$layer->id}" value="{$layer->mobile->data_x}" title="Typing 'center' to center">
                                     <span class="input-group-addon">pixel</span>
+                                    <input type="hidden" id="data_width_{$layer->id nofilter}" class="data-width" name="data_mwidth_{$layer->id nofilter}" value="{$layer->mobile->data_width nofilter}">
+                                    <input type="hidden" id="data_height_{$layer->id nofilter}" class="data-height" name="data_mheight_{$layer->id nofilter}" value="{$layer->mobile->data_height nofilter}">
                                 </div>
                             </div>
                         </div>
@@ -401,6 +403,8 @@
                                 <div class="input-group">
                                     <input type="text" class="data-x" name="data_m2x_{$layer->id}" value="{$layer->mobile2->data_x}" title="Typing 'center' to center">
                                     <span class="input-group-addon">pixel</span>
+                                    <input type="hidden" id="data_width_{$layer->id nofilter}" class="data-width" name="data_m2width_{$layer->id nofilter}" value="{$layer->mobile2->data_width nofilter}">
+                                    <input type="hidden" id="data_height_{$layer->id nofilter}" class="data-height" name="data_m2height_{$layer->id nofilter}" value="{$layer->mobile2->data_height nofilter}">
                                 </div>
                             </div>
                         </div>
@@ -464,6 +468,8 @@
                                 <div class="input-group">
                                     <input type="text" class="data-x" name="data_tx_{$layer->id}" value="{$layer->tablet->data_x}" title="Typing 'center' to center">
                                     <span class="input-group-addon">pixel</span>
+                                    <input type="hidden" id="data_width_{$layer->id nofilter}" class="data-width" name="data_twidth_{$layer->id nofilter}" value="{$layer->tablet->data_width nofilter}">
+                                    <input type="hidden" id="data_height_{$layer->id nofilter}" class="data-height" name="data_theight_{$layer->id nofilter}" value="{$layer->tablet->data_height nofilter}">
                                 </div>
                             </div>
                         </div>

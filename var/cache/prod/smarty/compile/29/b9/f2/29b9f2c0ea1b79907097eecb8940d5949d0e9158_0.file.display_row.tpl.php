@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-17 03:32:13
+/* Smarty version 3.1.33, created on 2019-05-04 02:58:27
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsslider\views\templates\hook\display_row.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cb6d67d2df0b3_03056278',
+  'unifunc' => 'content_5ccd38130224a5_62592235',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '29b9f2c0ea1b79907097eecb8940d5949d0e9158' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsslider\\views\\templates\\hook\\display_row.tpl',
-      1 => 1543996158,
+      1 => 1556089480,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cb6d67d2df0b3_03056278 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ccd38130224a5_62592235 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('positions', json_decode($_smarty_tpl->tpl_vars['display']->value['position'],true));?>
 <div class="panel display" id="display_<?php echo $_smarty_tpl->tpl_vars['display']->value['id_slider'];?>
 ">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-18 04:44:30
+/* Smarty version 3.1.33, created on 2019-05-04 06:09:35
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsslider\views\templates\hook\sliderchoice.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cb838eee7acf8_35101321',
+  'unifunc' => 'content_5ccd64df333399_68076964',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '768adeed9604cbe3e1bac16f7807e869f0e98897' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsslider\\views\\templates\\hook\\sliderchoice.tpl',
-      1 => 1543996158,
+      1 => 1556089480,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./display_row.tpl' => 1,
   ),
 ),false)) {
-function content_5cb838eee7acf8_35101321 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ccd64df333399_68076964 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="defaultForm form-horizontal">
     <input type="hidden" name="chooseSlider" value="1">
     <input type="hidden" name="site_url" id="site_url" value="<?php echo $_smarty_tpl->tpl_vars['root_url']->value;?>

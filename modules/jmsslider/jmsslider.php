@@ -301,6 +301,35 @@ class Jmsslider extends Module
                     $layer->mobile2->data_y = Tools::getValue('data_m2y_'.$id_layer, $layer->data_my);
                 }
 
+                if (Validate::isInt(Tools::getValue('data_width_'.$id_layer))) {
+                    $layer->desktop->data_width = Tools::getValue('data_width_'.$id_layer);
+                }
+                if (Validate::isInt(Tools::getValue('data_height_'.$id_layer))) {
+                    $layer->desktop->data_height = Tools::getValue('data_height_'.$id_layer);
+                }
+
+                if (Validate::isInt(Tools::getValue('data_theight_'.$id_layer))) {
+                    $layer->tablet->data_height = Tools::getValue('data_theight_'.$id_layer);
+                }
+                if (Validate::isInt(Tools::getValue('data_twidth_'.$id_layer))) {
+                    $layer->tablet->data_width = Tools::getValue('data_twidth_'.$id_layer);
+                }
+
+                if (Validate::isInt(Tools::getValue('data_mwidth'.$id_layer))) {
+                    $layer->mobile->data_width = Tools::getValue('data_mwidth_'.$id_layer);
+                }
+
+                if (Validate::isInt(Tools::getValue('data_mheight_'.$id_layer))) {
+                    $layer->mobile->data_height = Tools::getValue('data_mheight_'.$id_layer, $layer->data_my);
+                }
+                if (Validate::isInt(Tools::getValue('data_m2width_'.$id_layer))) {
+                    $layer->mobile2->data_width = Tools::getValue('data_m2width_'.$id_layer);
+                }
+
+                if (Validate::isInt(Tools::getValue('data_m2height_'.$id_layer))) {
+                    $layer->mobile2->data_height = Tools::getValue('data_m2height_'.$id_layer, $layer->data_my);
+                }
+
 
                 if (Validate::isUnsignedInt(Tools::getValue('data_font_size_'.$id_layer))) {
                     $layer->desktop->data_font_size = Tools::getValue('data_font_size_'.$id_layer);

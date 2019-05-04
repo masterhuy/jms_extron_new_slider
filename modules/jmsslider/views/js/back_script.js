@@ -171,11 +171,13 @@ $(document).ready(function () {
 	$('.panel-layers .form-layer').first().show();
 	$('.tp-caption').css("cursor", "move");
 	$('.layer').click(function () {
+		console.log(this);
 		strId = $(this).attr('id');
 	    patt1 = /\d+$/g;
 	    currentId = strId.match(patt1);
-		$('.layer').removeClass('active');
-		$('.layers-' + currentId).addClass('active');
+	    console.log('layer:',strId, this);
+		$('.layer').removeClass('active')
+		$(this).addClass('active');
 		$('#caption_' + currentId).addClass('active');
 		form_layer = $('.form-layer');
 		form_layer_id = $('#form_layer_' + currentId);
@@ -818,8 +820,19 @@ $(document).ready(function () {
 				strId = $(this).attr('id');
 				currentId = strId.substring(8, 20);
 				var Stoppos = $(this).position();
-				$('#data_width_' + currentId).val(Math.round($(this).width()));
-				$('#data_height_' + currentId).val(Math.round($(this).height()));
+				if (style=='mobile') {
+					$('input[name=data_mwidth_' + currentId+']').val(Math.round($(this).width()));
+					$('input[name=data_mheight_' + currentId+']').val(Math.round($(this).height()));
+				} else if (style=='mobile2') {
+					$('input[name=data_m2width_' + currentId+']').val(Math.round($(this).width()));
+					$('input[name=data_m2height_' + currentId+']').val(Math.round($(this).height()));
+				} else if (style=='tablet') {
+					$('input[name=data_twidth_' + currentId+']').val(Math.round($(this).width()));
+					$('input[name=data_theight_' + currentId+']').val(Math.round($(this).height()));
+				}else {
+					$('#data_width_' + currentId).val(Math.round($(this).width()));
+					$('#data_height_' + currentId).val(Math.round($(this).height()));
+				}
 			}
 		});
 
@@ -900,20 +913,30 @@ $(document).ready(function () {
 		if (style=='mobile') {
 			var top = 'data_my_';
 			var left = 'data_mx_';
+			var width = 'data_mwidth_';
+			var height = 'data_mheight_';
 		} else if (style=='mobile2'){
 			var top = 'data_m2y_';
 			var left = 'data_m2x_';
+			var width = 'data_m2width_';
+			var height = 'data_m2height_';
 		} else if (style=='tablet'){
 			var top = 'data_ty_';
 			var left = 'data_tx_';
+			var width = 'data_twidth_';
+			var height = 'data_theight_';
 		} else {
 			var top = 'data_y_';
 			var left = 'data_x_';
+			var width = 'data_width_';
+			var height = 'data_height_';
 		}
 		$('[id^=caption_').each(function() {
 			id = getId(this);
 			$(this).css('top' , $('input[name='+top+id+']').val()+'px');
 			$(this).css('left', $('input[name='+left+id+']').val()+'px');
+			$(this).css('width' , $('input[name='+width+id+']').val()+'px');
+			$(this).css('height', $('input[name='+height+id+']').val()+'px');
 		})
 	}
 	function setVisible(mobile) {
@@ -1063,7 +1086,7 @@ $(document).ready(function () {
 
     $(window).bind('resize', function() {
         drawRuler();
-    	selectFirstLayer();
+    	// selectFirstLayer();
     });
 
 });

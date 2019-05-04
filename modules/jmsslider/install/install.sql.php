@@ -222,6 +222,8 @@ CREATE TABLE `_DB_PREFIX_jms_layer_style` (
   `data_line_height` INT NOT NULL ,
   `data_x` INT(10) NOT NULL ,
   `data_y` INT(10) NOT NULL ,
+  `data_width` INT(10) NOT NULL DEFAULT 100,
+  `data_height` INT(10) NOT NULL DEFAULT 50,
   `data_show` BOOLEAN NOT NULL ,
   PRIMARY KEY (`id_style`)
 ) ENGINE = _MYSQL_ENGINE_;

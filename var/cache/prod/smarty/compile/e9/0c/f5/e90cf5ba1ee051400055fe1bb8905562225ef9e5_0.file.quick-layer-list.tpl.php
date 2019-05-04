@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-18 05:37:36
+/* Smarty version 3.1.33, created on 2019-05-04 06:23:57
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsslider\views\templates\hook\quick-layer-list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cb84560bd6480_25893834',
+  'unifunc' => 'content_5ccd683d77e210_75727685',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e90cf5ba1ee051400055fe1bb8905562225ef9e5' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsslider\\views\\templates\\hook\\quick-layer-list.tpl',
-      1 => 1543996158,
+      1 => 1556089480,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cb84560bd6480_25893834 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ccd683d77e210_75727685 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="quick-layer-selector">
     <div class="row">
         <span class="layer-list">

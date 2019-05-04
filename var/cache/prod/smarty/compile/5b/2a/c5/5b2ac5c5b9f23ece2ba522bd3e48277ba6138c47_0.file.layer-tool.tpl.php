@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-18 05:37:36
+/* Smarty version 3.1.33, created on 2019-05-04 06:23:57
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsslider\views\templates\hook\layer-tool.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cb84560baf387_22702227',
+  'unifunc' => 'content_5ccd683d762c96_98398071',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5b2ac5c5b9f23ece2ba522bd3e48277ba6138c47' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsslider\\views\\templates\\hook\\layer-tool.tpl',
-      1 => 1543996158,
+      1 => 1556089480,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./quick-layer-list.tpl' => 1,
   ),
 ),false)) {
-function content_5cb84560baf387_22702227 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ccd683d762c96_98398071 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="layer-tools" class="layer-tools">
     <div id="add-layer-wrap">

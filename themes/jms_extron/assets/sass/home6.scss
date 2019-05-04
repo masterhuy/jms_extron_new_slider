@@ -227,11 +227,14 @@
 
 //slide
 .jms-slider-wrapper{
+	.text-1 span{
+		font-weight: 600;
+	}
 	.text-2{
 		letter-spacing: 0;
 	}
 	.text-3{
-		letter-spacing: -0.3px;
+		letter-spacing: -0.6px;
 	}
 	.fs-pager-wrapper{
 		bottom: 5px;
@@ -610,6 +613,11 @@
 		p{
 			font-size: 14px;
 		}
+	}
+}
+@media (max-width: 1199px) and (min-width: 768px){
+	.jms-slider-wrapper .btn-shopnow {
+		line-height: 35px !important;
 	}
 }
 

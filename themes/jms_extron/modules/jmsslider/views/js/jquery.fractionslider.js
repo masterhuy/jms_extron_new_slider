@@ -196,7 +196,7 @@
 				slide.children().attr('rel', index).addClass('fs_obj');
 				slide.children('[data-fixed]').addClass('fs_fixed_obj');
 				var numb = index + 1;
-				
+
 
 				// pager again
 				if (options.pager || customPager) {
@@ -210,7 +210,7 @@
 							return pagerPressed(this);
 						});
 					}
-					
+
 					pager.append(tempObj);
 				}
 			});
@@ -625,15 +625,15 @@
 
 		function iterateObjs() {
 			var obj = $(fractionObjs[vars.currentObj]);
-
+			wWidth = $(window).width();
 			obj.addClass('fs-animation');
-			if (slider.innerWidth() < 480) {
+			if (wWidth < 480) {
 				position = obj.attr("data-mposition");
 				show = obj.attr("data-mshow");
-			} else if (slider.innerWidth() < 768) {
+			} else if (wWidth < 768) {
 				position = obj.attr("data-m2position");
 				show = obj.attr("data-m2show");
-			} else if (slider.innerWidth() < 1200) {
+			} else if (wWidth < 1200) {
 				position = obj.attr("data-tposition");
 				show = obj.attr("data-tshow");
 			} else {
@@ -1283,7 +1283,8 @@
 
 		function resizeSlider() {
 			var w = slider.innerWidth(), h = slider.innerHeight();
-
+			wWidth = $(window).width();
+			console.log(wWidth);
 			if (w <= dX || options.increase ) {
 
 				var xy = dX / dY, nH = w / xy;
@@ -1292,15 +1293,15 @@
 					'height' : nH + "px"
 				});
 			}
-			if(w < 480) {
+			if(wWidth < 480) {
 				slider.height(options.mobile_height);
 				slider.find('.slide').css('background-size', '100% 100%');
 				// if(options.mobileHeight <= 0) options.mobileHeight = 'auto';
 				// slider.css('height', options.mobileHeight);
-			} else if (w < 768) {
+			} else if (wWidth < 768) {
 				slider.height(options.mobile2_height);
 				slider.find('.slide').css('background-size', '100% 100%');
-			} else if (w < 1200) {
+			} else if (wWidth < 1200) {
 				slider.height(options.tablet_height);
 				slider.find('.slide').css('background-size', '100% 100%');
 			}
@@ -1321,13 +1322,13 @@
 			sliderHeight = 100;
 
 			if (vars.init == false || w < dX) {
-				resizeFontSize(w);
+				resizeFontSize(wWidth);
 			}
 		}
 
 		function resizeFontSize(w) {
 			var value = null, n = null, objs = slider.children('.slide').find('.jms-slide-content');
-
+			unit = options.responsive?'%':'px';
 			objs.each(function() {
 				obj = $(this);
 
@@ -1350,20 +1351,26 @@
 					else {
 						obj.css("fontSize", n + "px");
 					}
-					
+
+                    position = obj.attr('data-position').split(',');
 					lineheight = obj.attr('data-line-height');
 					lineheight = pixelToPercent(lineheight, dY) * (slider.find('.fs-stretcher').height() / 100);
 					obj.css("lineHeight", lineheight+'px');
 					obj.css('font-style', obj.attr('data-style'));
 					obj.css('font-weight', obj.attr('data-font-weight'));
+                    obj.css('top', position[0]+unit);
+                    obj.css('left', position[1]+unit);
 					if(w < 480 && mvalue) {
-						obj.css("fontSize", mvalue + "px");
+						obj.css("fontSize", mvalue + "px");;
 						mfont_weight = obj.attr('data-mfont-weight');
 						mstyle = obj.attr('data-mstyle');
 						mline_height = obj.attr('data-mline-height');
+                        mposition = obj.attr('data-mposition').split(',');
 						obj.css('font-style', mstyle);
 						obj.css('font-weight', mfont_weight);
 						obj.css('line-height', mline_height+ 'px');
+	                    obj.css('top', mposition[0]+unit);
+	                    obj.css('left', mposition[1]+unit);
 					} else if (w < 768) {
 						m2value = obj.attr('data-m2fontsize');
 						// n = pixelToPercent(m2value, 768) * w / 100;
@@ -1372,9 +1379,12 @@
 						mfont_weight = obj.attr('data-m2font-weight');
 						mstyle = obj.attr('data-m2style');
 						mline_height = obj.attr('data-m2line-height');
+                        m2position = obj.attr('data-m2position').split(',');
 						obj.css('font-style', mstyle);
 						obj.css('font-weight', mfont_weight);
 						obj.css('line-height', mline_height+ 'px');
+	                    obj.css('top', m2position[0]+unit);
+	                    obj.css('left', m2position[1]+unit);
 					} else if (w < 1200) {
 						tvalue = obj.attr('data-tfontsize');
 						// n = pixelToPercent(tvalue, 1200) * w / 100;
@@ -1383,9 +1393,12 @@
 						mfont_weight = obj.attr('data-tfont-weight');
 						mstyle = obj.attr('data-tstyle');
 						mline_height = obj.attr('data-tline-height');
+                        tposition = obj.attr('data-tposition').split(',');
 						obj.css('font-style', mstyle);
 						obj.css('font-weight', mfont_weight);
 						obj.css('line-height', mline_height+ 'px');
+	                    obj.css('top', tposition[0]+unit);
+	                    obj.css('left', tposition[1]+unit);
 					}
 
 				}
