@@ -213,41 +213,31 @@
   font-weight: 700;
   color: #888;
   text-decoration: line-through;
-  margin-right: 1.1vw; }
+  margin-right: 1.3vw;
+  font-size: 1vw;
+  letter-spacing: -0.5px;
+  display: inline-block; }
+
+.jms-slider-wrapper .new-price {
+  font-weight: 700;
+  font-size: 1.2vw !important;
+  letter-spacing: 0.5px;
+  color: #ff8400;
+  display: inline-block; }
 
 .jms-slider-wrapper .text-1 {
   font-weight: 400; }
 
 .jms-slider-wrapper .text-2 {
-  letter-spacing: 0.25px;
-  line-height: 1.53; }
+  letter-spacing: 0.25px; }
 
 .jms-slider-wrapper .text-3 {
   font-family: PT Sans; }
 
-.jms-slider-wrapper .section {
-  width: 3.4vw;
-  height: 3.1vw;
-  border: 2px solid #ff4c65;
-  border-radius: 3px;
-  text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-right: 6px; }
-
-.jms-slider-wrapper .new-price {
-  font-weight: 700;
-  font-size: 1.2vw;
-  letter-spacing: 0.5px;
-  color: #ff8400; }
+.jms-slider-wrapper .countdown-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .jms-slider-wrapper .amount {
   display: block;
@@ -650,8 +640,6 @@
 @media (max-width: 481px) {
   .product-carousel2-col3 .product-preview .flexbox + .product-info {
     margin-top: 0; }
-  div.fs-pager-wrapper a.active {
-    width: auto; }
   .header .jms-advsearch .input-group-addon.icon-drop-down {
     width: 110px; }
   .header .center .addon-box {

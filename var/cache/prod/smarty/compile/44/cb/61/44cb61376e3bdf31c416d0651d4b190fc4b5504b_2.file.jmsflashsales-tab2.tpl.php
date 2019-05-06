@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-04 06:10:02
+/* Smarty version 3.1.33, created on 2019-05-06 04:41:44
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsflashsales\views\templates\hook\jmsflashsales-tab2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ccd64fa17beb1_67519686',
+  'unifunc' => 'content_5ccff348b602a2_72832169',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product_flashsale_tab2.tpl' => 1,
   ),
 ),false)) {
-function content_5ccd64fa17beb1_67519686 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ccff348b602a2_72832169 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales-tab2">
 	<div class="tabpanel">
 		<div class="addon-title">

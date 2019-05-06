@@ -47,3 +47,7 @@
 .intro .addon-box{
   justify-content: flex-start;
 }
+.ver_menu img {
+  right: 20px;
+  left: auto;
+}

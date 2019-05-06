@@ -86,3 +86,13 @@
   margin-left: 42px;
   margin-right: 0;
 }
+.jms-megamenu .menu-align-center > .dropdown-menu{
+  right: 0 !important;
+  left: auto;
+}
+@media (max-width: 991px){
+  .topbar .left{
+    left: 0;
+    right: auto;
+  }
+}

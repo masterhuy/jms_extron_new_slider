@@ -39,3 +39,8 @@
 .special_deal .center .product-preview .product-info {
   text-align: right;
 }
+@media (max-width: 991px){
+  a#open-button {
+    float: left;
+  }
+}

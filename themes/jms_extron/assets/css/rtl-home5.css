@@ -63,3 +63,10 @@
 .footer_m .right{
   text-align: left;
 }
+.header .center a#open-button {
+  float: right;
+}
+.ver_mobile .ver_menu img{
+  left: 0;
+  margin-left: 0;
+}

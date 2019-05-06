@@ -1254,7 +1254,7 @@
 				obj.attr('data-fontsize', obj.css('font-size'));
 				if(obj.parent().attr('data-mfontsize'))
 					obj.attr('data-mfontsize', obj.parent().attr('data-mfontsize'));
-				obj.attr('data-letterspacing', obj.css('letter-spacing'));
+				// obj.attr('data-letterspacing', obj.css('letter-spacing'));
 
 			});
 
@@ -1403,13 +1403,13 @@
 
 				}
 
-				var spacing_value = obj.attr('data-letterspacing');
+				// var spacing_value = obj.attr('data-letterspacing');
 
-				if (spacing_value.indexOf('px') > 0) {
-					spacing_value = spacing_value.substring(0, spacing_value.length - 2);
-					n = pixelToPercent(spacing_value, dY) * (slider.find('.fs-stretcher').height() / 100);
-					obj.css("letterSpacing", n + "px");
-				}
+				// if (spacing_value.indexOf('px') > 0) {
+				// 	spacing_value = spacing_value.substring(0, spacing_value.length - 2);
+				// 	n = pixelToPercent(spacing_value, dY) * (slider.find('.fs-stretcher').height() / 100);
+				// 	obj.css("letterSpacing", n + "px");
+				// }
 
 			});
 		}

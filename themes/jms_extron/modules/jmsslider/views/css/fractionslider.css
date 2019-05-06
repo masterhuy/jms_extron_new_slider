@@ -15,9 +15,12 @@
 }
 
 .fraction-slider .fs_obj{
-	display:block; display:none;
+	text-align: left;
+	display:block; 
+	display:none;
 	position:absolute;
-	top:0px; left:100%;
+	top:0px; 
+	left:100%;
 	z-index:700;
 }
 
